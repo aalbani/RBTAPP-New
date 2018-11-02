@@ -532,6 +532,7 @@
                     </view>
                     <connections>
                         <outlet property="authBtn" destination="fbz-Bq-OTg" id="Vpv-km-XbG"/>
+                        <outlet property="closeBtn" destination="p0V-bN-AOP" id="jcm-4Q-yfY"/>
                         <outlet property="emailField" destination="hZO-Eb-I3I" id="XvH-mb-me4"/>
                         <outlet property="passwordField" destination="lWT-FD-P8S" id="0mE-LY-bNT"/>
                         <outlet property="segmentedControl" destination="Ek1-6y-gev" id="7qL-3j-ptQ"/>

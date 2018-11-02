@@ -15,9 +15,13 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
     @IBOutlet weak var passwordField: RoundedCornerTextField!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var authBtn: RoundedShadowButton!
+    @IBOutlet weak var closeBtn: UIButton!
+    
+    var flagCloseBtn = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.closeBtn.isHidden = flagCloseBtn
         self.emailField.delegate = self
         self.passwordField.delegate = self
         view.bindtoKeyboard()
