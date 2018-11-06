@@ -33,7 +33,7 @@
 		71F5192C1EB1FB4F000932E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F5192B1EB1FB4F000932E6 /* Assets.xcassets */; };
 		71F5192F1EB1FB4F000932E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5192D1EB1FB4F000932E6 /* LaunchScreen.storyboard */; };
 		95CE144E7FB1D465DEDF7490 /* Pods_htchhkr_development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD51F68F98DA5241C1A0DF01 /* Pods_htchhkr_development.framework */; };
-		BA0A9CFD219231000091748B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA0A9CFC219231000091748B /* GoogleService-Info.plist */; };
+		BA0A9CFF219233340091748B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA0A9CFE219233340091748B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,7 +65,7 @@
 		71F5192B1EB1FB4F000932E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71F5192E1EB1FB4F000932E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71F519301EB1FB4F000932E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA0A9CFC219231000091748B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../RBTAPP/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA0A9CFE219233340091748B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		BD51F68F98DA5241C1A0DF01 /* Pods_htchhkr_development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_htchhkr_development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE56E3D4A27A4C4D17B459C /* Pods-htchhkr-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htchhkr-development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-htchhkr-development/Pods-htchhkr-development.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,7 +182,7 @@
 				71289DC71EB40BF700FD1AAB /* Controller */,
 				71F519241EB1FB4F000932E6 /* AppDelegate.swift */,
 				71F519281EB1FB4F000932E6 /* Main.storyboard */,
-				BA0A9CFC219231000091748B /* GoogleService-Info.plist */,
+				BA0A9CFE219233340091748B /* GoogleService-Info.plist */,
 				71F5192B1EB1FB4F000932E6 /* Assets.xcassets */,
 				71F5192D1EB1FB4F000932E6 /* LaunchScreen.storyboard */,
 				71F519301EB1FB4F000932E6 /* Info.plist */,
@@ -270,7 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F5192F1EB1FB4F000932E6 /* LaunchScreen.storyboard in Resources */,
-				BA0A9CFD219231000091748B /* GoogleService-Info.plist in Resources */,
+				BA0A9CFF219233340091748B /* GoogleService-Info.plist in Resources */,
 				71F5192C1EB1FB4F000932E6 /* Assets.xcassets in Resources */,
 				71F5192A1EB1FB4F000932E6 /* Main.storyboard in Resources */,
 			);
