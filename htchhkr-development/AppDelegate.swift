@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     @objc func setupRootView(_ window: UIWindow) {
         let storyboard = UIStoryboard(name: MAIN_STORYBOARD, bundle: Bundle.main)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: VC_LOGIN) as? LoginVC
+        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginNC")
         window.rootViewController = loginVC
         window.makeKeyAndVisible()
     }

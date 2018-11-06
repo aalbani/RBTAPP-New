@@ -47,6 +47,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                 FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
                     if error == nil {
                         if let user = user {
+                            print("user ===> \(user) + \(user.displayName) + \(user.email))")
                             if self.segmentedControl.selectedSegmentIndex == 0 {
                                 let userData = ["provider": user.providerID] as [String: Any]
                                 DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: false)
@@ -55,7 +56,8 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                                 DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: true)
                             }
                         }
-                        self.dismiss(animated: true, completion: nil)
+                        //self.dismiss(animated: true, completion: nil)
+                        self.moveToHome()
                     } else {
                         if let errorCode = FIRAuthErrorCode(rawValue: error!._code) {
                             switch errorCode {
@@ -78,6 +80,7 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                                 }
                             } else {
                                 if let user = user {
+                                    print("user ===> \(user) + \(user.displayName) + \(user.email))")
                                     if self.segmentedControl.selectedSegmentIndex == 0 {
                                         let userData = ["provider": user.providerID] as [String: Any]
                                         DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: false)
@@ -86,12 +89,19 @@ class LoginVC: UIViewController, UITextFieldDelegate, Alertable {
                                         DataService.instance.createFirebaseDBUser(uid: user.uid, userData: userData, isDriver: true)
                                     }
                                 }
-                                self.dismiss(animated: true, completion: nil)
+                                //self.dismiss(animated: true, completion: nil)
+                                self.moveToHome()
                             }
-                        })
+                        }) 
                     }
                 })
             }
         }
+    }
+    
+    func moveToHome() {
+        let containerVc = ContainerVC()
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeVC")
+        self.navigationController?.pushViewController(containerVc, animated: true)
     }
 }

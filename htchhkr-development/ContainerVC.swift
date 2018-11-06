@@ -43,6 +43,10 @@ class ContainerVC: UIViewController {
         initCenter(screen: showVC)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     func initCenter(screen: ShowWhichVC) {
         var presentingController: UIViewController
         
