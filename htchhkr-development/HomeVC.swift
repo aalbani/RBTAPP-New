@@ -414,7 +414,7 @@ class HomeVC: UIViewController, Alertable {
 
 extension HomeVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        if status == .authorizedAlways {
+        if status == .authorizedAlways || status == .authorizedWhenInUse{
             mapView.showsUserLocation = true
             mapView.userTrackingMode = .follow
         }
