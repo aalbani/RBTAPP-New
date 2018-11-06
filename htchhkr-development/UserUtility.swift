@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+class UserUtility {
+    
+    public static let shared = UserUtility()
+    
+    
+    
+    
+}

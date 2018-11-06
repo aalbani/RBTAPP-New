@@ -34,6 +34,7 @@
 		71F5192F1EB1FB4F000932E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F5192D1EB1FB4F000932E6 /* LaunchScreen.storyboard */; };
 		95CE144E7FB1D465DEDF7490 /* Pods_htchhkr_development.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD51F68F98DA5241C1A0DF01 /* Pods_htchhkr_development.framework */; };
 		BA0A9CFF219233340091748B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA0A9CFE219233340091748B /* GoogleService-Info.plist */; };
+		BA0A9D03219233E50091748B /* UserUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0A9D02219233E50091748B /* UserUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		71F5192E1EB1FB4F000932E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71F519301EB1FB4F000932E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA0A9CFE219233340091748B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BA0A9D02219233E50091748B /* UserUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtility.swift; sourceTree = "<group>"; };
 		BD51F68F98DA5241C1A0DF01 /* Pods_htchhkr_development.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_htchhkr_development.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE56E3D4A27A4C4D17B459C /* Pods-htchhkr-development.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-htchhkr-development.debug.xcconfig"; path = "Pods/Target Support Files/Pods-htchhkr-development/Pods-htchhkr-development.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,6 +175,7 @@
 		71F519231EB1FB4F000932E6 /* htchhkr-development */ = {
 			isa = PBXGroup;
 			children = (
+				BA0A9D00219233C80091748B /* New */,
 				712C6BE01EC085A400A32C00 /* Resources */,
 				71A09BFA1EB4911F0030E820 /* Services */,
 				71289DE01EB452F500FD1AAB /* Extensions */,
@@ -205,6 +208,22 @@
 				5B3455EF2DA6AEF374A63C8C /* Pods-htchhkr-development.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BA0A9D00219233C80091748B /* New */ = {
+			isa = PBXGroup;
+			children = (
+				BA0A9D01219233D00091748B /* Utility */,
+			);
+			name = New;
+			sourceTree = "<group>";
+		};
+		BA0A9D01219233D00091748B /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				BA0A9D02219233E50091748B /* UserUtility.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,6 +354,7 @@
 				71289DD71EB42E6600FD1AAB /* LeftSidePanelVC.swift in Sources */,
 				71289DD11EB4113600FD1AAB /* CircleView.swift in Sources */,
 				71289DD91EB42EE800FD1AAB /* ContainerVC.swift in Sources */,
+				BA0A9D03219233E50091748B /* UserUtility.swift in Sources */,
 				719DA04C1EB5B996007DB157 /* PassengerAnnotation.swift in Sources */,
 				71289DE21EB4530200FD1AAB /* UIViewExt.swift in Sources */,
 				719DA04A1EB592DF007DB157 /* DriverAnnotation.swift in Sources */,
