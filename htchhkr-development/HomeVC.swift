@@ -782,8 +782,8 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
        
         dropPinFor(placemark: selectedMapItem.placemark)
         
-        searchMapKitForResultsWithPolyline(forOriginMapItem: nil, withDestinationMapItem: selectedMapItem)
-        
+        //searchMapKitForResultsWithPolyline(forOriginMapItem: nil, withDestinationMapItem: selectedMapItem)
+        shouldPresentLoadingView(false)
         animateTableView(shouldShow: false)
     }
     
